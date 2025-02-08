@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats de recherche</title>
+</head>
+<body>
+    <center>
+        <a href="/">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" height="92" width="272">
+        </a>
+        
+        <form action="/results" method="GET">
+            <input type="text" name="q" size="50" value="{{ search_query }}">
+            <br><br>
+            <input type="submit" value="Recherche Google">
+        </form>
+
+        <div style="text-align: left; max-width: 600px; margin: 0 auto;">
+            <!-- Résultats de recherche -->
+            <div class="result">
+                <h3><a href="#">Titre du premier résultat</a></h3>
+                <cite>www.exemple.com/premier-resultat</cite>
+                <p>Description du premier résultat de recherche...</p>
+            </div>
+
+            <div class="result">
+                <h3><a href="#">Titre du deuxième résultat</a></h3>
+                <cite>www.exemple.com/deuxieme-resultat</cite>
+                <p>Description du deuxième résultat de recherche...</p>
+            </div>
+
+            <div class="result">
+                <h3><a href="#">Titre du troisième résultat</a></h3>
+                <cite>www.exemple.com/troisieme-resultat</cite>
+                <p>Description du troisième résultat de recherche...</p>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
